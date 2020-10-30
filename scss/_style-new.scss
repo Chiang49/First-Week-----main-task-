@@ -7,6 +7,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -23,7 +29,7 @@ body{
     .title{
         @extend %title;
         margin-bottom: $text-marginBottom*4;
-        > p{
+        > span{
             color: $title-color;
         }
     }
@@ -39,18 +45,19 @@ body{
 .skill{
     @extend %fluidSet;
     margin-bottom: $box-marginBottom;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     .title_Fluid{
         @extend %titleFluid;
+        margin-right: auto;
+        margin-left: auto;
         width: 996px;
         margin-bottom: $text-marginBottom*10;
     }
     .content_Fluid{
         @extend %contentTextFluid;
+        width: 218px;
         border-left: $border-style;
         padding-left: 24px;
+        margin: 0 auto;
         > li{
             margin-bottom: $text-marginBottom*5;
         }
@@ -90,6 +97,9 @@ footer{
             margin-bottom: $text-marginBottom*4;
             > a{
                 margin-right: 24px;
+                &:hover{
+                    text-decoration: underline;
+                }
                 > img{
                     vertical-align: bottom;
                 }

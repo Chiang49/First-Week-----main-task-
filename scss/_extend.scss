@@ -1,25 +1,21 @@
 
 %title{
-    display: flex;
-    align-items: center;
     border-bottom: 1px solid #000;
     padding-bottom: 8px;
-    > h2{
-        font-size: $font-size*2;
-        line-height: 43px;
-        font-family: 'Noto Sans TC', sans-serif;
-        margin-right: 16px;
-    }
-    > p{
+    font-size: $font-size*2;
+    line-height: 43px;
+    font-family: 'Noto Sans TC', sans-serif;
+    span{
         font-size: $font-size*1.5;
         font-weight: 500;
+        margin-left: 16px;
     }
 }
 
 %titleFluid{
     @extend %title;
     border-bottom: 1px solid #fff;
-    justify-content: center;
+    text-align: center;
 }
 
 

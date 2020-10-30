@@ -44,33 +44,22 @@ table {
 }
 
 .skill .title_Fluid, footer .title_Fluid, .container .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-bottom: 1px solid #000;
   padding-bottom: 8px;
-}
-
-.skill .title_Fluid > h2, footer .title_Fluid > h2, .container .title > h2 {
   font-size: 32px;
   line-height: 43px;
   font-family: 'Noto Sans TC', sans-serif;
-  margin-right: 16px;
 }
 
-.skill .title_Fluid > p, footer .title_Fluid > p, .container .title > p {
+.skill .title_Fluid span, footer .title_Fluid span, .container .title span {
   font-size: 24px;
   font-weight: 500;
+  margin-left: 16px;
 }
 
 .skill .title_Fluid, footer .title_Fluid {
   border-bottom: 1px solid #fff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .skill .content_Fluid, footer .content_Fluid, .container .content {
@@ -99,6 +88,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -120,7 +114,7 @@ body {
   margin-bottom: 16px;
 }
 
-.container .title > p {
+.container .title > span {
   color: #a00404;
 }
 
@@ -134,26 +128,20 @@ body {
 
 .skill {
   margin-bottom: 72px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .skill .title_Fluid {
+  margin-right: auto;
+  margin-left: auto;
   width: 996px;
   margin-bottom: 40px;
 }
 
 .skill .content_Fluid {
+  width: 218px;
   border-left: 1px solid #96A9C4;
   padding-left: 24px;
+  margin: 0 auto;
 }
 
 .skill .content_Fluid > li {
@@ -195,6 +183,10 @@ footer .content_Fluid > li {
 
 footer .content_Fluid > li > a {
   margin-right: 24px;
+}
+
+footer .content_Fluid > li > a:hover {
+  text-decoration: underline;
 }
 
 footer .content_Fluid > li > a > img {
