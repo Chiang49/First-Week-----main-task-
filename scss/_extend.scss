@@ -1,0 +1,42 @@
+
+%title{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+    > h2{
+        font-size: $font-size*2;
+        line-height: 43px;
+        font-family: 'Noto Sans TC', sans-serif;
+        margin-right: 16px;
+    }
+    > p{
+        font-size: $font-size*1.5;
+        font-weight: 500;
+    }
+}
+
+%titleFluid{
+    @extend %title;
+    border-bottom: 1px solid #fff;
+    justify-content: center;
+}
+
+
+%contentText{
+    font-size: $font-size*1.5;
+    line-height: 36px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+%contentTextFluid{
+    @extend %contentText;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+%fluidSet{
+    color: #fff;
+    background: $fluid-background-color;
+    padding: 24px 0 36px;
+}
